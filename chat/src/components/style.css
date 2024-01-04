@@ -1,0 +1,251 @@
+.boxBody {
+    height: 100dvh !important;
+    max-height: 100dvh !important;
+    display: flex;
+    flex-direction: column;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+}
+
+.chatWrap {
+    width: 90vw;
+    height: 75vh;
+    max-height: 75vh;
+    overflow-y: scroll;
+    border: 2px solid #5560d54a;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    -webkit-backdrop-filter: blur(8px) !important;
+    backdrop-filter: blur(8px) !important;
+    scrollbar-color: #454a4d #101629;
+}
+
+@media (min-width: 600px) {
+    ::-webkit-scrollbar {
+        background-color: #21254b59;
+        color: #aba499;
+        width: 10px;
+        height: 10px;
+    }
+
+    ::-webkit-scrollbar-corner {
+        background-color: #181a1b;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background-color: #454a4d;
+        border-radius: 10px;
+    }
+}
+
+.messageTitle {
+    display: flex;
+    text-transform: capitalize;
+    margin-bottom: 2px;
+}
+
+.messageText {
+    text-align: justify;
+    text-indent: 50px;
+    margin-bottom: 6px;
+}
+
+.messageRefer {
+    text-align: justify;
+    margin-bottom: 6px;
+}
+
+.bottemDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.bottemDivInput {
+    min-width: 85% !important;
+    max-height: 10px;
+    height: 30px;
+}
+
+.userCard {
+    background-color: #cfd8ffad !important;
+}
+
+.bottemDivButton {
+    padding: 2px;
+    height: 30px;
+}
+
+@media (max-width: 800px) {
+    .bottemDivInput {
+        max-height: 20px;
+        height: 30px;
+    }
+
+    .bottemDivButton {
+        padding: 2px;
+        padding-left: 5px;
+        height: 30px;
+    }
+}
+
+.iconImg {
+    border-radius: 50%;
+    border: 2px solid #8b8b88;
+}
+
+.loginIcon {
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #8b8b88;
+}
+
+.loginLogo {
+    height: 65px;
+}
+
+.loginIconLogoDiv {
+    margin-left: 7%;
+    width: 240px;
+    margin-top: 20px;
+    margin-bottom: -20px;
+    /* if need seperate border for icon use below */
+    /* border-radius: 40px;
+    border: 2px solid #1d60b963;
+    -webkit-backdrop-filter: blur(16px);
+    backdrop-filter: blur(16px); */
+}
+
+.messageBox {
+    box-sizing: border-box;
+    padding: 0.5rem 1rem;
+    margin: 1rem;
+    background: #ffffff00;
+    min-height: 2.25rem;
+    box-shadow:
+        0 0 2rem rgba(0, 0, 0, 0.075),
+        0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+}
+
+.messageBox2 {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.1), 0 6px 6px 0 rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin: 1rem;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.messageBox3 {
+    position: relative;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    color: #dcdcdc;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.messageBox3::before {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 10px;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.messageBox3::after {
+    content: "";
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    border-radius: 10px;
+    z-index: -2;
+}
+
+.commentIcon {
+    margin-right: 6px;
+}
+
+.loader {
+    margin-top: 6px;
+}
+
+.loaderFirst {
+    width: 90%;
+    margin-left: 10%;
+}
+
+.loaderSecod {
+    width: 100%;
+}
+
+.loaderThird {
+    width: 80%;
+}
+
+.loaderFourth {
+    width: 20%;
+}
+
+.modal-content {
+    max-width: 85%;
+    z-index: 700;
+    left: 10%;
+}
+
+.modelButton {
+    height: 21px;
+}
+
+.modelInput {
+    min-width: 100% !important;
+    max-height: 10px;
+    height: 30px;
+    margin-bottom: 30px !important;
+}
+
+.loginDiv {
+    width: 340px;
+    height: 340px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 5px;
+    border: 2px solid #1d60b963;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+.loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.loginButton {
+    background-color: rgba(249, 249, 249, 0.089) !important;
+    border: 2px solid #1d60b963 !important;
+    border-radius: 40px !important;
+    height: 42px !important;
+}
+
+.formItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+}
