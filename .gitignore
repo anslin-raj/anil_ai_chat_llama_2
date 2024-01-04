@@ -1,0 +1,7 @@
+env/
+venv/
+user.db
+.python-version
+.vscode/
+__pycache__/
+chat/node_modules
