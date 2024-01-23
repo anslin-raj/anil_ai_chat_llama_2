@@ -57,7 +57,29 @@ Proceed with the installation of the Nvidia container toolkit and synchronize it
    sudo systemctl restart docker
    ```
 
-### Build and run the application 
+
+### Run the Application with Docker
+
+1. Generate a secret key using the openssl tool:
+   ```bash
+   openssl rand -hex 16
+   ```
+2. Launch the Docker container, pulling the meticulously crafted image from Docker Hub, and utilize the source files for operation:
+   ```bash
+   sudo docker run -d -e SECRET_KEY='58d763bfae7c03f24b016c8f5401080f' --runtime=nvidia --gpus all --name your_container_name -p 0.0.0.0:8020:8020 anslin/anil_ai_chat_llama_2:v1.0.0
+   ```
+   Replace `'58d763bfae7c03f24b016c8f5401080f'` with your generated secret key.
+   
+   You can find the Docker image for this project at the following Docker Hub repository:
+   [anslin/anil_ai_chat_llama_2](https://hub.docker.com/r/anslin/anil_ai_chat_llama_2)
+
+3. The credentials for the administrative user are autonomously generated and can be conveniently located within the log of the Docker container.
+   ```bash
+   sudo docker logs --follow your_container_name
+   ```
+
+
+### Build and run the application with Docker
 
 1. Duplicate the repository by initiating the cloning process.
    ```bash
